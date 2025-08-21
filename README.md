@@ -1,1 +1,1 @@
-# squeezecomposer.github.io
+# This is the demo page for SqueezeComposer
