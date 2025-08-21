@@ -74,15 +74,15 @@
 
   <figcaption style="text-align: center;">
   <b>Figure 1:</b>
-  The EfficientMusic framework: audio is compressed via time-scale modification, generated in a compact domain for various tasks (e.g., long-form composition, accompaniment), and then expanded and refined to the original resolution.
+  (A) The EfficientMusic framework: audio is compressed via time-scale modification, generated in a compact domain for various tasks (e.g., long-form composition, accompaniment), and then expanded and refined to the original resolution. (B) Training pipeline for temporal speed-up and restoration. The input audio is speeded up and processed through a two-stage pipeline: CNN generates a prior condition, then DiT refines it to produce high-quality restored audio. The accelerated audio maintains the original sampling rate, ensuring vocoder compatibility. Training uses MSE loss for CNN prior generation and diffusion loss for DiT refinement.
   </figcaption>
   </figure>
 
   <figure>
-  <p align="center"><img src="task.jpg" width="100%"  class="center"/></p>
+  <p align="center"><img src="task.jpg" width="60%"  class="center"/></p>
 
   <figcaption style="text-align: center;">
-  <b>Figure 1:</b> Overview of the SqueezeComposer framework. (A) Long-form Music Composing: temporal speed-up enables efficient abstract-level generation using DiT with masking strategies (scratch, completion, continuation). (B) Whole-song Singing Accompaniment Generation: semantic-to-prior mapping followed by DiT refinement for harmonious accompaniment.
+  <b>Figure 2:</b> Overview of the SqueezeComposer framework. (A) Long-form Music Composing: temporal speed-up enables efficient abstract-level generation using DiT with masking strategies (scratch, completion, continuation). (B) Whole-song Singing Accompaniment Generation: semantic-to-prior mapping followed by DiT refinement for harmonious accompaniment.
   </figcaption>
   </figure>
  
