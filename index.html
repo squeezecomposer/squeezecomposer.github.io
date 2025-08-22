@@ -91,11 +91,15 @@
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
 <h2 id="In-domain" style="text-align:center;"><font color="000000">Whole-song Accompaniment Generation</font></h2>
-<p style="text-align: justify;"><font color="000000"> The following samples are singing accompaniment generation. 
+<p style="text-align: justify;"><font color="000000"> The following samples are singing accompaniment generation. We compare our results with some baseline models. 
+
+<!--
 <p style="text-align: justify;"><strong><font color="000000"> Explanation: The AudioLM baseline notably underperforms in both audio quality and musicality, primarily due to the inefficient Encodec and the lack of re-training on the audio-converted LAKH dataset. </font></strong></p>
 <p style="text-align: justify;"><strong><font color="000000"> Generally, "DAC-TPS86" suffers from excessive repetition, poor musical progression and poor instrumental consistency. We highlight how our method, "Pyramid-TPS70," performs better compared to "DAC-TPS86." </font></strong></p>
 <p style="text-align: justify;"><strong><font color="000000"> For example, assigning numbers to the examples using row-major order, sample 1 of "DAC-TPS86" exhibits a monotonous and repetitive rhythm. A disharmonious instrument can be heard at 16-17 seconds in sample 3, while in sample 4, disharmony occurs around 35 seconds. In sample 6, an instrument drops out after approximately 15 seconds. The differences in sample 2 and sample 5 may be subjective and based on individual taste. </font></strong></p>
 <ul style="list-style-type:square">
+-->
+
 <!--
 <li><font color="061E61"> For each dataset, the same HiFi-GAN vocoder pretrained on GT mel is used for all methods. </font></li>
 -->
@@ -194,8 +198,8 @@
 
  
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-  <h2 id="TTS" style="text-align:center;"><font color="000000">More Samples for Whole-song Accompaniment Generation. (Vocal | Accompanimetn | Mixture)</font></h2>
-  <p style="text-align: justify;"><font color="000000"> The following samples are generated using PyramidCodec for tokenizer and tiny-GPT2 (40M trainable parameters) as language model. We recommend that listeners focus on aspects such as coherence, rhythm, and adherence to musical conventions.
+  <h2 id="TTS" style="text-align:center;"><font color="000000">More Samples for Whole-song Accompaniment Generation.    (Vocal | Accompanimetn | Mixture)</font></h2>
+  <p style="text-align: justify;"><font color="000000"> The following samples are generated samples for singing accompaniment generation. The left column is the input vocal, the middle column is the generated instrumental accompaniment, and the right column is the mixture.
   <ul style="list-style-type:square">
 
     <br></br>
