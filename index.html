@@ -53,7 +53,7 @@
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
 
-  <div class="centered-link"> <a href="">Paper</a> | <a href="">Code(Coming soon)</a> </div>
+  <!-- <div class="centered-link"> <a href="">Paper</a> | <a href="">Code(Coming soon)</a> </div> -->
   <!--
   <p align="center"><sup>1</sup>Jianyi Chen, <sup>1</sup>Wei Xue, <sup>2</sup>Xu Tan, <sup>1</sup>Zhen Ye, <sup>1</sup>Qifeng Liu, <sup>1</sup>Yike Guo</p>
   <p align="center"><sup>1</sup>The Hong Kong University of Science and Technology, <sup>2</sup>Microsoft Research Asia</p>
@@ -92,7 +92,7 @@
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
 <h2 id="squeeze-restore" style="text-align:center;"><font color="000000">1. Squeeze and Restore</font></h2>
 
-<p style="text-align: justify;"><font color="000000">1.1 Reconstruction samples (4x speeding-up | ground-truth | reconstruction)</font></p>
+<p style="text-align: justify;"><font color="000000">We propose a simple yet effective method that leverages AI's ability to understand and reconstruct accelerated music (such as 2x, 4x, or 8x) to reduce duration and resource requirements, enabling long-form music generation while restoring the original speed at the end. Below are reconstruction samples demonstrating the effectiveness of our approach at different acceleration rates.</font></p>
 
 <div style="text-align: center; margin: 20px 0;">
   <button onclick="showTab('4x')" class="tab-button active" id="4x-btn">4x Speeding-up</button>
@@ -431,89 +431,7 @@ function showTab(tabName) {
 
 
  
-<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
-  <h2 id="TTS" style="text-align:center;"><font color="000000">More Samples for Whole-song Accompaniment Generation.    (Vocal | Accompanimetn | Mixture)</font></h2>
-  <p style="text-align: justify;"><font color="000000"> The following samples are generated samples for singing accompaniment generation. The left column is the input vocal, the middle column is the generated instrumental accompaniment, and the right column is the mixture.
-  <ul style="list-style-type:square">
 
-    <br></br>
-    <table align="center">
-    <thead>
-
-      <tr>
-        <th style=" font-weight: normal;text-align: center">Sample1</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\016_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\016_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\016_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample2</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\024_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\024_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\024_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample3</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\026_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\026_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\026_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample4</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\027_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\027_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\027_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample5</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\029_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\029_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\029_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample6</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\031_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\031_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\031_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample7</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\032_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\032_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\032_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample8</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\033_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\033_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\033_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample9</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\034_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\034_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\034_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-      <tr>
-	<th style=" font-weight: normal;text-align: center">Sample10</th>
-        <td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\035_gt_v.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\035_gen_nv.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-	<td style=" text-align: center"><audio controls="controls" ><source src="samples\squeezecomposer\035_gen.wav" autoplay/>Your browser does not support the audio element.</audio></td>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
- 
-            </tr>
-            </tbody>
-            </table>          
-</div>
-
-</p>
 
 			</section>
 		</article>
