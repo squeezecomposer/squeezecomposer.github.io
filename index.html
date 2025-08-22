@@ -246,12 +246,40 @@ function showTab(tabName) {
   // Add active class to clicked button
   document.getElementById(tabName + '-btn').classList.add('active');
 }
+
+function showAccompanimentTab(tabName) {
+  // Hide all tab contents
+  var contents = document.getElementsByClassName('tab-content');
+  for (var i = 0; i < contents.length; i++) {
+    contents[i].classList.remove('active');
+  }
+  
+  // Remove active class from all buttons
+  var buttons = document.getElementsByClassName('tab-button');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove('active');
+  }
+  
+  // Show selected tab content
+  document.getElementById(tabName + '-content').classList.add('active');
+  
+  // Add active class to clicked button
+  document.getElementById(tabName + '-btn').classList.add('active');
+}
 </script>
 </div>
 
 <div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded"> 
 <h2 id="In-domain" style="text-align:center;"><font color="000000">2. Whole-song Accompaniment Generation</font></h2>
-<p style="text-align: justify;"><font color="000000"> 2.1 The following samples are singing accompaniment generation. We compare our results with some baseline models. 
+<p style="text-align: justify;"><font color="000000">RandSong is randomly selecting an accompaniment from the accompaniment library to pair with the input vocal, FastSAG generates by cutting into 10-second segments, and SqueezeComposer is our proposed method that can generate whole-song accompaniment more quickly, coherently, and harmoniously.</font></p>
+
+<div style="text-align: center; margin: 20px 0;">
+  <button onclick="showAccompanimentTab('baselines')" class="tab-button active" id="baselines-btn">Baselines</button>
+  <button onclick="showAccompanimentTab('more')" class="tab-button" id="more-btn">More Samples</button>
+</div>
+
+<div id="baselines-content" class="tab-content active">
+<p style="text-align: justify;"><font color="000000">2.1 The following samples are singing accompaniment generation. We compare our results with some baseline models.</font></p> 
 
 <!--
 <p style="text-align: justify;"><strong><font color="000000"> Explanation: The AudioLM baseline notably underperforms in both audio quality and musicality, primarily due to the inefficient Encodec and the lack of re-training on the audio-converted LAKH dataset. </font></strong></p>
@@ -349,8 +377,10 @@ function showTab(tabName) {
   </tr>
   </tbody>
   </table>
+</div>
 
-  <p style="text-align: justify;"><font color="000000"> 2.2 More samples (input vocal | generated accompaniment | mixture)</font></p>
+<div id="more-content" class="tab-content">
+  <p style="text-align: justify;"><font color="000000">2.2 More samples (input vocal | generated accompaniment | mixture)</font></p>
 
   <table align="center">
   <thead>
